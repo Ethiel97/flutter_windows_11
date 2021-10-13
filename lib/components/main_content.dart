@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 import 'videos_list.dart';
 
 class MainContent extends StatefulWidget {
-  MainContent({Key? key}) : super(key: key);
+  const MainContent({Key? key}) : super(key: key);
 
   @override
   _MainContentState createState() => _MainContentState();
@@ -24,7 +24,7 @@ class _MainContentState extends State<MainContent> {
         return Stack(
           overflow: Overflow.visible,
           children: [
-            Container(
+            SizedBox(
               width: double.infinity,
               height: MediaQuery.of(context).size.height - 100,
             ),
@@ -45,7 +45,7 @@ class _MainContentState extends State<MainContent> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Icon(
-                            provider.menuItem?.icon,
+                            provider.menuItem?.icon ?? FlutterIcons.home_ant,
                             size: 16,
                           ),
                         ),

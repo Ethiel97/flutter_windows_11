@@ -14,6 +14,6 @@ const double screenXl = 1200;
 const double screenXxl = 1400;
 
 // component
-const double sideBarDesktopWidth = 220;
+const double sideBarDesktopWidth = 240;
 const double sideBarMobileWidth = 70;
 const double componentPadding = 24.0;

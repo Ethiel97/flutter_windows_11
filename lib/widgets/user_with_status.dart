@@ -31,8 +31,8 @@ class UserWithStatus extends StatelessWidget {
           bottom: 2,
           right: -2,
           child: Container(
-            width: 12,
-            height: 12,
+            width: 8,
+            height: 8,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(100),
               color: accentColor,

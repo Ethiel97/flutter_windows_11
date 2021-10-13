@@ -113,12 +113,11 @@ class _SideBarState extends State<SideBar> {
                 : MainAxisAlignment.center,
             children: [
               if (_isDesktop)
-                Text(
+                const Text(
                   "devEnthusiast",
                   style: TextStyle(
                     color: darkColor,
                     fontSize: 14,
-                    fontFamily: GoogleFonts?.nunito().fontFamily,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -146,15 +145,16 @@ class _SideBarState extends State<SideBar> {
                 const SizedBox(
                   height: 20,
                 ),
-                Text(
-                  "CONTENT MANAGERS",
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    color: textColor.withOpacity(.4),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12,
+                if (_isDesktop)
+                  Text(
+                    "CONTENT MANAGERS",
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                      color: textColor.withOpacity(.4),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
                   ),
-                ),
                 const SizedBox(
                   height: 4,
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
+import 'package:flutter_windows_11/components/pile_faces.dart';
 
 import '../constants.dart';
 
@@ -34,9 +35,10 @@ class _TopBarState extends State<TopBar> {
         children: [
           if (_isNotSm)
             const SizedBox(
-              height: 24,
+              height: 18,
             ),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: _isNotSm
                 ? MainAxisAlignment.spaceBetween
                 : MainAxisAlignment.center,
@@ -65,6 +67,11 @@ class _TopBarState extends State<TopBar> {
                 ],
               ),
               if (_isNotSm) ...[
+                const SizedBox(
+                  height: 35,
+                  width: 200,
+                  child: PileFaces(),
+                ),
                 TextButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(
