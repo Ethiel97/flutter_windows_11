@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class MenuItem {
-  final String name;
-  final IconData icon;
+  final String? image;
+  final String label;
+  final IconData? icon;
 
   final Widget? trailing;
 
   MenuItem(
-    this.name,
+    this.image,
+    this.label,
     this.icon, {
     this.trailing,
   });

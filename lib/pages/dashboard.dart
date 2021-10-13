@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_windows_11/components/main_content.dart';
+import 'package:flutter_windows_11/components/videos_list.dart';
 import 'package:flutter_windows_11/layout/main_layout.dart';
 
 class Dashboard extends StatelessWidget {
@@ -6,8 +8,6 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MainLayout(
-        child: Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: const [],
-    ));
+        child: MainContent(),
+      );
 }

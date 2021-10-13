@@ -3,32 +3,33 @@ import 'package:flutter_windows_11/constants.dart';
 
 class UserWithStatus extends StatelessWidget {
   final String image;
-  final double width;
+  final double size;
 
   const UserWithStatus({
     Key? key,
     required this.image,
-    this.width = 80,
+    this.size = 38,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Stack(
+      overflow: Overflow.visible,
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(100),
           child: SizedBox(
-            width: width,
-            height: width,
+            width: size,
+            height: size,
             child: Image.asset(
-              "assets/images/${image}",
+              "assets/images/$image",
               fit: BoxFit.cover,
             ),
           ),
         ),
         Positioned(
-          bottom: 12,
-          right: -5,
+          bottom: 2,
+          right: -2,
           child: Container(
             width: 12,
             height: 12,

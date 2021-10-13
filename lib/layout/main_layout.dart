@@ -6,17 +6,15 @@ import 'side_bar.dart';
 
 class MainLayout extends StatelessWidget {
   final Widget child;
-
   const MainLayout({Key? key, required this.child}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       backgroundColor: backgroundColor,
       body: SafeArea(
         child: Row(
           children: [
-            const SideBar(),
+            const SingleChildScrollView(child: SideBar()),
             Expanded(
               child: Column(
                 children: [
@@ -36,5 +34,4 @@ class MainLayout extends StatelessWidget {
         ),
       ),
     );
-  }
 }
