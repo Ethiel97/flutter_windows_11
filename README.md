@@ -2,7 +2,7 @@
 
 ### Responsive on Mobile and Desktop
 
-![Demo Image](https://github.com/ethiel97/flutter_windows_11/assets/img/demo.jpg)
+![Demo Image](https://github.com/ethiel97/flutter_windows_11/assets/images/demo.jpg)
 
 ## Contact
 
