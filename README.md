@@ -6,4 +6,4 @@
 
 ## Contact
 
-Ethiel ADIASSA- [Twitter](https://www.twitter.com/enthusiastDev) - ethiel97@gmail.com - [Website](https://ethieladiassa.me)
+Ethiel ADIASSA - [Twitter](https://www.twitter.com/enthusiastDev) - ethiel97@gmail.com - [Website](https://ethieladiassa.me)
